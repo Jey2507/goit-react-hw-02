@@ -45,8 +45,7 @@ const positiveFeedback = Math.round((moods.good / totalFeedback) * 100)
     <>
       <Description />
       <Options updateMods={updateFeedback} total={totalFeedback} onReset={reset}/>
-      {totalFeedback ? <Feedback moods={moods} totalMoods={totalFeedback} positive={positiveFeedback}/> : <Notification />}
-      
+      {totalFeedback ? <Feedback moods={moods} totalMoods={totalFeedback} positive={positiveFeedback}/> : <Notification />} 
     </>
   )
 }
