@@ -16,7 +16,7 @@ export default function Feedback({moods: {good, neutral, bad}, totalMoods, posit
             </ul>
             <div className={css.space}>
                 <p className={css.descr}>Total:{totalMoods}</p>
-                <p className={css.descr}>Positive:{positive}%</p>
+                <p className={css.descr}>Positive:{positive || 0}%</p>
             </div>
         </div>
     )
